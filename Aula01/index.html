@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ADS - Projeto 01</title>
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1>Olá Mundo!</h1>
+      <h4>Calcular Minha Média</h4>
+    </header>
+    <main>
+      <form id="formulario" novalidate>
+        <div class="linha">
+          <label for="nota1"></label>
+          <input
+            type="number"
+            name="nota1"
+            id="nota1"
+            placeholder="Informe uma Nota"
+          />
+          <div class="error"></div>
+        </div>
+
+        <div class="linha">
+          <label for="nota2"></label>
+          <input
+            type="number"
+            name="nota2"
+            id="nota2"
+            placeholder="Informe uma Nota"
+          />
+          <div class="error"></div>
+        </div>
+
+        <div class="acoes">
+          <input
+            id="btnCalcular"
+            type="button"
+            value="Calcular Média"
+            onclick="alert('Clicou no Botão!')"
+          />
+        </div>
+      </form>
+
+      <hr />
+
+      <div class="resultado"></div>
+    </main>
+
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
