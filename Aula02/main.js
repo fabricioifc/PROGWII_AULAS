@@ -1,6 +1,6 @@
 const questao_tag = document.querySelector('div.questao');
 const alternativas_tag = document.querySelector('div.alternativas');
-const form = document.querySelector('form');
+const form_tag = document.querySelector('form');
 const resultado_tag = document.querySelector('p.resultado');
 var indice = 0;
 
@@ -31,11 +31,11 @@ const questoes = [
     }
 ];
 
-const proximaQuestao = function(){
+function proximaQuestao(){
     let questao = questoes[indice];
 
     imprimirQuestao(questao);
-    imprimirAlternativas(questao.alternativas);        
+    imprimirAlternativas(questao.alternativas);
 };
 
 function imprimirQuestao(questao) {
@@ -111,10 +111,10 @@ document.querySelector('form').addEventListener('submit', function(event) {
     if (resultado.correta) {
         limpar();
 
-        if (++indice === questoes.length) {
+        if (indice === questoes.length) {
             resultado_tag.innerHTML = "Quiz Finalizado!";
         } else {
-            proximaQuestao(indice);
+            proximaQuestao(indice++);
         }
         
     }
