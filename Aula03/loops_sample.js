@@ -1,5 +1,14 @@
 const numeros = [1, 5, 3, 5, 6, 3];
 
+// for
+
+// while
+// do..while
+// for..in
+// for..of
+// foreach
+// map
+
 // let soma = 0;
 // for (let i = 0; i < numeros.length; i++) {
 //   const item = numeros[i];
